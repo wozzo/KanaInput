@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Test KanaInput</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="../src/jquery.kanaInput.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$("#HiraganaInput").kanaInput({ shiftKana: false });
+		$("#KatakanaInput").kanaInput({ defaultKana: "katakana", shiftKana: false});
+	});
+</script>
+</head>
+<body>
+<label for="HiraganaInput">Hiragana Input:</label><input type="text" id="HiraganaInput"></input>
+<label for="KatakanaInput">Katakana Input:</label><input type="text" id="KatakanaInput"></input>
+</body>
+</html>

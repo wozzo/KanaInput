@@ -1,3 +1,10 @@
+/***********************************************************************
+jQuery KanaInput plugin
+Author: Warren Bates
+version 1.0
+***********************************************************************/
+
+
 (function($) {
 	var methods = {
 		init : function(options) {
@@ -5,7 +12,7 @@
 			var $this = $(this), settings = {
 				// Default Settings
 				'defaultKana': 'hiragana', // hiragana || katakana
-				'shiftKana' : true // Switch between hiragana and katakana when uppercase is used
+				'shiftKana' : false // Switch between hiragana and katakana when uppercase is used
 			};
 
 			return $this.each(function() { 
@@ -15,7 +22,7 @@
 				};
 
 				// Bind events
-				$this.on('beforeinput.kanaInput', methods.UpdateDisplay);
+				$this.on('keypress.kanaInput', methods.UpdateDisplay);
 
 				// Set data
 				$this.data('defaultKana', settings.defaultKana.toLowerCase())

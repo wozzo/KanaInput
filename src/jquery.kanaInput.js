@@ -22,7 +22,7 @@ version 1.0
 				};
 
 				// Bind events
-				$this.on('keypress.kanaInput', methods.UpdateDisplay);
+				$this.on('keydown.kanaInput', methods.UpdateDisplay);
 
 				// Set data
 				$this.data('defaultKana', settings.defaultKana.toLowerCase())

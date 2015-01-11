@@ -7,8 +7,10 @@ Many Japanese sites require a particular kana script to be entered, which would 
 KanaInput requires jQuery. We recommend using Google's CDN version using the code below or you can download it from [jQuery.com](jQuery.com).
 The jQuery.kanaInput.js file should then be included afterwards. See below for example.
 
-```<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="jQuery.kanaInput.js"></script>```
+```
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="jQuery.kanaInput.js"></script>
+```
 
 Create the text box you plan to and place it in the page where desired
 
